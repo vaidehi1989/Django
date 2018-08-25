@@ -1,0 +1,8 @@
+Module 3 - Learning objective:
+
+1. Creating HTML templates.
+2. Templates directory and its entry in settings.py file.
+3. App specific templates folder and its priority sequence.
+4. Difference between "page not found 404 error" and "template not found error".
+5. Function based views and class based views.
+6. Template extending.
