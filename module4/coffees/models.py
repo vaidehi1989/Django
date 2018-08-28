@@ -2,11 +2,12 @@
 from django.db import models
 
 class Coffee(models.Model):
-    name = models.CharField(max_length=30)
-    description = models.CharField(max_length=30)
-    rosat_level = models.CharField(max_length=30)
+    name = models.CharField(max_length=100)
+    flavour = models.CharField(max_length=100)
+    roast = models.CharField(max_length=100)
     price = models.IntegerField()
-    processing_type = models.CharField(max_length=30)
+    processing = models.CharField(max_length=100)
+    description = models.TextField()
 
     def __str__(self):
     	return self.name

@@ -17,10 +17,11 @@ from django.contrib import admin
 from django.urls import include, path
 from django.views.generic import TemplateView
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', TemplateView.as_view(template_name='home.html')),
-    path('icecreams/', include('icecreams.urls')),
-    path('coffees/', include('coffees.urls')),    
+
+    path('', TemplateView.as_view(template_name='home.html'), name="home"),  # templates/home.html
+
+    path('icecreams/', include('icecreams.urls')),  # icecreams/urls.py
+    path('coffees/', include('coffees.urls')),  # coffees/urls.py
 ]
