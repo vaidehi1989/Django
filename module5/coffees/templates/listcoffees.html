@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block base_content %}
+<div class="row">
+    <div class="col-md-8">
+        <h3>List of Coffees</h3>
+        <ul>
+            {% for coffee in coffees %}
+            <li><h3><a href="{% url 'detail_view' coffee.pk %}">{{ coffee }}</a></h3></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock %}
+
+
+
