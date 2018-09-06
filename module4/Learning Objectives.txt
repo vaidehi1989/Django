@@ -1,0 +1,6 @@
+Module 4 - Learning objective:
+
+1. Creating Models.(models.py)
+2. Reflect the changes in to the database(makemigrations and migrate commands).
+3. class-based views and function-based views.
+4. admin site - createsuperuser, admin UI.

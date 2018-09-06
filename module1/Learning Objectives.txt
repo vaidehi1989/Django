@@ -1,0 +1,7 @@
+Module 1 - Learning objective:
+
+1. Installing Python and Django.
+2. Setting up new project.
+3. Understanding setting.py file.
+4. Change default database settings.
+5. Understanding manage.py file (migrate and runserver commands).
