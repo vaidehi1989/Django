@@ -1,6 +1,0 @@
-Module 2 - Learning objective:
-
-1. Creating a new app.
-2. Making its entry in settings.py file.
-3. Displaying "Hello World" on browser (HttpResponse()).
-4. Understanding significance of URL patterns and urls.py file.
