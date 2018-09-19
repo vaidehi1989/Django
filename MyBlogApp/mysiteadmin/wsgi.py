@@ -1,5 +1,5 @@
 """
-WSGI config for mysiteadmin project.
+WSGI config for MyBlog project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

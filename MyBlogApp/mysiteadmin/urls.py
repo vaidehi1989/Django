@@ -1,4 +1,4 @@
-"""mysiteadmin URL Configuration
+"""MyBlog URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.1/topics/http/urls/
@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from blog import views
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('about/', TemplateView.as_view(template_name="about.html"), name='aboutpage'),
+    path('accounts/', include('accounts.urls')),
     path('', include('blog.urls')),
-    path('about/', TemplateView.as_view(template_name = "about.html"), name = "about"),
 ]
