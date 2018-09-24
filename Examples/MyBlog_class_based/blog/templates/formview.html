@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+{{heading}}
+{% endblock %}
+{% block base%}
+{% load crispy_forms_tags %}
+<div class="row">
+    <div class="col-md-12" align="centre">
+        <form method="post">
+            <div class="card col-md-8">
+                <div class="card-header bg-primary" align="centre"><h3 align="center">{{heading}}</h3></div>
+                <div class="card-body" align="left">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                </div>
+                <div class="card-footer" align="center">
+                    <button type="submit" class="btn btn-success">Save</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+    </div>
+</div>
+{% endblock%}
